@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+:root {
+  --small: 2rem;
+  --medium: 4rem;
+}
+
+body {
+  background-color: rgba(250, 235, 215, 0.377) !important;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-gap: 0.4rem;
+}
+
+ul li::before {
+  content: attr(data-icon);
+  font-size: 1.3em;
+  padding-right: 0.1rem;
+  margin-left: 0.8rem;
+}
+
+.skapidor {
+  font-family: "Permanent Marker", cursive;
+  font-size: 2.6em !important;
+  color: antiquewhite !important;
+}
+
+.w-100 {
+  width: 100% !important;
+  height: 60vh;
+  object-fit: cover;
+}
+
+p {
+  margin: 3rem 0;
+}
+
+.badge {
+  background-color: #ff4f0a;
+}
+
+.copy_bg {
+  background-color: #463a36e3;
+}
+
+.nav_bg {
+  background-color: #463a36c7;
+}
+
+.menu_heading {
+  margin: var(--medium) 0;
+}
+
+.meals_heading {
+  margin-top: var(--medium);
+}
+
+.about {
+  padding: var(--small) 0;
+  background-color: antiquewhite;
+}
