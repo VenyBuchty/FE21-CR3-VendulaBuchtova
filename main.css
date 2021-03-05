@@ -1,39 +1,116 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap");
 
 :root {
   --small: 2rem;
   --medium: 4rem;
+  --big: 5rem;
+  --light: #ffffff;
+  --darker: #e3cda5;
 }
 
 body {
-  background-color: rgba(250, 235, 215, 0.377) !important;
+  background-color: #d9c893;
+  opacity: 1;
+  background-image: radial-gradient(#a62f14 2px, transparent 2px),
+    radial-gradient(#a62f14 2px, #d9c893 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+  background-attachment: fixed;
 }
+
+/* NAV BAR */
+.info_btn {
+  background-color: #d1d2d5 !important;
+}
+
+.skapidor {
+  font-family: "Permanent Marker", cursive;
+  font-size: 2.5rem !important;
+  color: #f7f7f7 !important;
+}
+
+.nav_bg {
+  background: rgb(166, 47, 20);
+  background: linear-gradient(
+    90deg,
+    rgba(166, 47, 20, 1) 0%,
+    rgba(191, 147, 15, 0.8281687675070029) 100%
+  );
+}
+/* ABOUT */
+.about {
+  padding: var(--small) 0;
+  margin: 2rem var(--small);
+  background-color: var(--light);
+  border-radius: 25px;
+}
+
+.about h3,
+p {
+  color: #45391a;
+}
+
+/* CAROUSEL */
+.w-100 {
+  width: 100% !important;
+  height: 60vh;
+  object-fit: cover;
+}
+
+/* ALLERGENS */
+.alergens {
+  background-color: var(--light);
+  margin: 0rem var(--small);
+  padding: 3rem 0;
+  color: #45391a;
+  border-radius: 25px;
+}
+
+/* .alergens h3 {
+} */
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-gap: 0.4rem;
 }
 
-ul li::before {
-  content: attr(data-icon);
-  font-size: 1.3em;
-  padding-right: 0.1rem;
-  margin-left: 0.8rem;
+ul li {
+  font-size: 1em;
+  padding: 0.1rem;
+  margin-left: 1rem;
 }
 
-.skapidor {
-  font-family: "Permanent Marker", cursive;
-  font-size: 2.6em !important;
-  color: antiquewhite !important;
+/* STARTERS */
+.starters {
+  background-color: var(--light);
+  padding: var(--small) 0;
+  margin: var(--big) var(--small);
+  border-radius: 25px;
 }
 
-.w-100 {
-  width: 100% !important;
-  height: 60vh;
-  object-fit: cover;
+/* MAIN DISH*/
+.main_dish {
+  background-color: var(--light);
+  padding: var(--small) 0;
+  margin: var(--big) var(--small);
+  border-radius: 25px;
+}
+
+/* DESSERTS */
+.desserts {
+  background-color: var(--light);
+  padding: var(--small) 0;
+  margin: var(--big) var(--small);
+  border-radius: 25px;
+}
+/* BEVERAGES */
+.beverages {
+  background-color: var(--light);
+  padding: var(--small) 0;
+  margin: var(--small);
+  border-radius: 25px;
 }
 
 p {
@@ -44,23 +121,14 @@ p {
   background-color: #ff4f0a;
 }
 
-.copy_bg {
-  background-color: #463a36e3;
-}
+/* FOOTER */
 
-.nav_bg {
-  background-color: #463a36c7;
-}
-
-.menu_heading {
-  margin: var(--medium) 0;
-}
-
-.meals_heading {
-  margin-top: var(--medium);
-}
-
-.about {
-  padding: var(--small) 0;
-  background-color: antiquewhite;
+footer {
+  padding-top: 3rem;
+  background: rgb(166, 47, 20);
+  background: linear-gradient(
+    90deg,
+    rgba(166, 47, 20, 1) 0%,
+    rgba(191, 147, 15, 0.8281687675070029) 100%
+  );
 }
