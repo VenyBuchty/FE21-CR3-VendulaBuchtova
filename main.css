@@ -15,6 +15,7 @@ body {
   background-repeat: repeat;
   opacity: 1;
   background-attachment: fixed;
+  color: #462909 !important;
 }
 
 .headings {
@@ -127,7 +128,12 @@ ul li {
 }
 
 .badge {
-  background-color: #ff4f0a;
+  background: rgb(166, 47, 20);
+  background: linear-gradient(
+    90deg,
+    rgba(166, 47, 20, 1) 0%,
+    rgba(161, 122, 5, 0.828) 100%
+  );
 }
 
 /* FOOTER */
