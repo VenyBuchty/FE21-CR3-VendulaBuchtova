@@ -2,26 +2,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap");
 
 :root {
+  --text_col: #45391a;
   --small: 2rem;
   --medium: 4rem;
   --big: 5rem;
   --light: #ffffff;
-  --darker: #e3cda5;
+  --darker: #f7cd95;
+}
+/* BASE */
+body {
+  background-image: url("./img/watercolors.png");
+  background-repeat: repeat;
+  opacity: 1;
+  background-attachment: fixed;
 }
 
-body {
-  background-color: #d9c893;
-  opacity: 1;
-  background-image: radial-gradient(#a62f14 2px, transparent 2px),
-    radial-gradient(#a62f14 2px, #d9c893 2px);
-  background-size: 80px 80px;
-  background-position: 0 0, 40px 40px;
-  background-attachment: fixed;
+.headings {
+  font-family: "Permanent Marker", cursive;
+  font-size: 2.8rem !important;
+  color: #462909 !important;
+}
+
+.headings_smaller {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.8rem !important;
+  color: #462909 !important;
 }
 
 /* NAV BAR */
 .info_btn {
-  background-color: #d1d2d5 !important;
+  background-color: #ffffff !important;
 }
 
 .skapidor {
@@ -31,6 +41,7 @@ body {
 }
 
 .nav_bg {
+  padding-top: 3rem;
   background: rgb(166, 47, 20);
   background: linear-gradient(
     90deg,
@@ -42,17 +53,18 @@ body {
 .about {
   padding: var(--small) 0;
   margin: 2rem var(--small);
-  background-color: var(--light);
-  border-radius: 25px;
+  background-color: #f3b562;
+  border-radius: 10px;
 }
 
 .about h3,
 p {
-  color: #45391a;
+  padding: 0.5rem;
+  color: var(--text_col);
 }
 
 /* CAROUSEL */
-.w-100 {
+.rest_carousel {
   width: 100% !important;
   height: 60vh;
   object-fit: cover;
@@ -60,15 +72,16 @@ p {
 
 /* ALLERGENS */
 .alergens {
-  background-color: var(--light);
+  background-color: var(--darker);
   margin: 0rem var(--small);
   padding: 3rem 0;
-  color: #45391a;
-  border-radius: 25px;
+  color: var(--text_col);
+  border-radius: 10px;
 }
 
-/* .alergens h3 {
-} */
+.legend_bg {
+  background-color: #f3b562;
+}
 
 ul {
   margin: 0;
@@ -84,37 +97,33 @@ ul li {
 
 /* STARTERS */
 .starters {
-  background-color: var(--light);
+  background-color: var(--darker);
   padding: var(--small) 0;
-  margin: var(--big) var(--small);
-  border-radius: 25px;
+  margin: 0 var(--small);
+  border-radius: 10px;
 }
 
 /* MAIN DISH*/
 .main_dish {
-  background-color: var(--light);
+  background-color: var(--darker);
   padding: var(--small) 0;
-  margin: var(--big) var(--small);
-  border-radius: 25px;
+  margin: var(--small);
+  border-radius: 10px;
 }
 
 /* DESSERTS */
 .desserts {
-  background-color: var(--light);
+  background-color: var(--darker);
   padding: var(--small) 0;
-  margin: var(--big) var(--small);
-  border-radius: 25px;
+  margin: var(--small);
+  border-radius: 10px;
 }
 /* BEVERAGES */
 .beverages {
-  background-color: var(--light);
+  background-color: var(--darker);
   padding: var(--small) 0;
   margin: var(--small);
-  border-radius: 25px;
-}
-
-p {
-  margin: 3rem 0;
+  border-radius: 10px;
 }
 
 .badge {
@@ -124,7 +133,7 @@ p {
 /* FOOTER */
 
 footer {
-  padding-top: 3rem;
+  padding-top: 1rem;
   background: rgb(166, 47, 20);
   background: linear-gradient(
     90deg,
@@ -132,3 +141,9 @@ footer {
     rgba(191, 147, 15, 0.8281687675070029) 100%
   );
 }
+
+footer p {
+  color: rgb(252, 248, 217);
+}
+
+/* REVIEW SETTIGNS */
